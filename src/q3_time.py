@@ -1,7 +1,17 @@
 import json
 from collections import Counter
+from typing import List, Tuple
 
-def q3_time(file_path):
+def q3_time(file_path: str) -> List[Tuple[str, int]]:
+    """
+    Función para encontrar el top 10 histórico de usuarios más influyentes en función del conteo de las menciones (@) que registra cada uno de ellos.
+    
+    Args:
+    file_path (str): Ruta del archivo JSON que contiene los tweets.
+    
+    Returns:
+    List[Tuple[str, int]]: Lista de tuplas que contienen el nombre de usuario y su respectivo conteo de menciones.
+    """
     # Crear un contador para almacenar la cantidad de menciones por usuario
     mention_counter = Counter()
 

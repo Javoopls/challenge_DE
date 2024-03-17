@@ -1,6 +1,8 @@
 import json
+from memory_profiler import profile
 from collections import Counter
 
+@profile
 def q3_memory(file_path):
     # Crear un contador para almacenar la cantidad de menciones por usuario
     mention_counter = Counter()

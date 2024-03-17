@@ -5,6 +5,15 @@ from datetime import datetime
 
 @profile
 def q1_memory(file_path):
+    """
+    Función para encontrar las top 10 fechas donde hay más tweets y los usuarios con más publicaciones por cada una de esas fechas.
+    
+    Args:
+    file_path (str): Ruta del archivo JSON que contiene los tweets.
+    
+    Returns:
+    List[Tuple[datetime.date, str]]: Lista de tuplas que contienen la fecha y el usuario con más publicaciones para cada una de las top 10 fechas.
+    """
     # Crear un diccionario para almacenar el recuento de tweets por fecha
     tweet_counts_by_date = defaultdict(int)
 
